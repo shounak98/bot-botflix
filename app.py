@@ -17,6 +17,7 @@ def suggest(update: Update, context: CallbackContext) -> None:
     description = str(random_row['description'].values[0])
     director = str(random_row['director'].values[0])
     cast = str(random_row['cast'].values[0])
+    print( + index +'\n' + title +'\n'  + cast +'\n'  +  director+'\n'    +'\n' +  description )
 
     update.message.reply_text('<i>#' + index + '</i>\n<strong>Title: ' + title + '</strong> \nCast: [' + cast + '] \nDirector: ' + director + '\n\nDescription: '+description, parse_mode='HTML')
 
