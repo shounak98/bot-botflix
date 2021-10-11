@@ -1,10 +1,15 @@
 import pandas as pd
+import json,urllib
+import os
 
 ## import telebot as tb
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext, callbackcontext, updater
 
 
+def meme(update, context):
+    meme_url = json.loads(urllib.request.urlopen("https://meme-api.herokuapp.com/gimme/1").read())['memes'][0]['url']
+    context.bot.send_photo(chat_id=update.effective_chat.id, photo = meme_url)
 
 
 
