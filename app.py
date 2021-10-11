@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import json,urllib.request
-import telebot as tb
+#import telebot as tb
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext, callbackcontext, updater
 
