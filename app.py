@@ -34,5 +34,6 @@ def suggest(update: Update, context: CallbackContext) -> None:
 
 updater = Updater('2037547906:AAGXApXjW3gyBcw3pCMjhe2sV7aXmxF4dc8')
 updater.dispatcher.add_handler(CommandHandler('suggest', suggest))   
+updater.dispatcher.add_handler(CommandHandler('meme', meme))   
 updater.start_polling()
 updater.idle()
