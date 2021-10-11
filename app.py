@@ -1,5 +1,5 @@
 import pandas as pd
-import json,urllib
+import json,urllib.request
 import os
 
 ## import telebot as tb
